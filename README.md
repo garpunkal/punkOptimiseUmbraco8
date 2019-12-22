@@ -4,7 +4,7 @@ A simple plugin for Umbraco which allows you to optimise media using TinyPNG or 
 
 # nuget
 
-https://www.nuget.org/packages/punkOptimise.Core/1.0.0
+https://www.nuget.org/packages/punkOptimise.Core
 
 `Install-Package punkOptimise.Core`
 
