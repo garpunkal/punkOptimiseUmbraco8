@@ -4,13 +4,15 @@
     <TargetFramework>net472</TargetFramework>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Company>garpunkal</Company>
-    <Description>punkOptimise.Core</Description>
-    <PackageProjectUrl>https://github.com/garpunkal/</PackageProjectUrl>
-    <PackageIconUrl></PackageIconUrl>
+    <Authors>Gareth Wright</Authors>
+    <Description>A plugin for Umbraco 8 which allows you to optimise media using TinyPNG or ImageProcessor.</Description>
+    <PackageProjectUrl>https://github.com/garpunkal/punkOptimise</PackageProjectUrl>
+    <PackageIcon>~/images/garpunkal.jpg</PackageIcon>
     <RepositoryUrl>https://github.com/garpunkal/punkOptimise</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
     <PackageTags></PackageTags>
-    <Version>1.0.0.0</Version>
+    <PackageDescription>A plugin for Umbraco 8 which allows you to optimise media using TinyPNG or ImageProcessor.</PackageDescription>
+    <Version>1.0.0.1</Version>
     <RunPostBuildEvent>Always</RunPostBuildEvent>
   </PropertyGroup>
 
@@ -22,6 +24,14 @@
       <copyToOutput>true</copyToOutput>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\garpunkal.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\garpunkal.jpg" />
   </ItemGroup>
 
   <ItemGroup>

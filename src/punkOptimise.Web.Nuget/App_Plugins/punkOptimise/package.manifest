@@ -1,0 +1,9 @@
+﻿{
+  javascript: [
+    "~/App_Plugins/punkOptimise/backoffice/optimise/punkOptimise.Optimise.Controller.js",
+    "~/App_Plugins/punkOptimise/backoffice/optimise/punkOptimise.Optimise.Resources.js"
+  ],
+  css: [
+    "~/App_Plugins/punkOptimise/backoffice/optimise/optimise.css"
+  ]
+}

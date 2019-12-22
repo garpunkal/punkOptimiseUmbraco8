@@ -1,10 +1,17 @@
 # punkOptimise
 
-A simple app_plugin for Umbraco which allows you to optimise media using TinyPNG or ImageProcessor. 
+A simple plugin for Umbraco which allows you to optimise media using TinyPNG or ImageProcessor. 
+
+# nuget
+
+https://www.nuget.org/packages/punkOptimise.Core/1.0.0
+
+`Install-Package punkOptimise.Core`
+
 
 ## Basic Requirements
 
-- Umbraco 8 +
+- Umbraco 8.4+
 
 ## Screenshots
 
@@ -16,9 +23,11 @@ A simple app_plugin for Umbraco which allows you to optimise media using TinyPNG
 
 
 ## Instructions
-1. Copy the App_Plugins folder into your Umbraco website project. 
-2. This will enable the optimise functionality in your Umbraco instance. 
-3. Add the following config to your web.config:
+1. Install the nuget package: 
+
+    `Install-Package punkOptimise.Core`
+    
+2. Add the following config to your web.config:
 
     `<add key="punkOptimise:ReduceFileExtensions" value="jpg,jpeg" />`
 
@@ -28,7 +37,8 @@ A simple app_plugin for Umbraco which allows you to optimise media using TinyPNG
 
     `<add key="punkOptimise:TinyPng:ApiUrl" value="https://api.tinify.com/shrink" />`
 
-    `<add key="punkOptimise:TinyPng:ApiKey" value="XXXXXXXXXXXX" />`
+    `<add key="punkOptimise:TinyPng:ApiKey" value="" />`
 
-4. Complete the TinyPNG developer API key registration: https://tinypng.com/developers and add the key to the config above.
+3. Complete the TinyPNG developer API key registration: https://tinypng.com/developers 
+4. Add the key to the config above: punkOptimise:TinyPng:ApiKey
 

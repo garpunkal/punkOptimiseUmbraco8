@@ -1,0 +1,8 @@
+﻿
+#optimise div#thumbnail-image {  
+    margin-bottom:30px;
+}
+
+    #optimise div#thumbnail-image img {       
+        max-height: 300px;
+    }
