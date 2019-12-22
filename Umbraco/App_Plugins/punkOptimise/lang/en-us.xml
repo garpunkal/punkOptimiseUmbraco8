@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="en-us" intName="English (US)" localName="English (US)" lcid="" culture="en-US">
+  <creator>
+    <name>garpunkal</name>
+    <link>https://garpunkal.uk</link>
+  </creator>
+   <area alias="optimise">
+    <key alias="cancel"><![CDATA[Cancel]]></key>
+    <key alias="optimiseImage"><![CDATA[Optimise]]></key>
+    <key alias="save"><![CDATA[Optimise]]></key>
+    <key alias="notvalid"><![CDATA[Unfortunately this image isn't suitable for optimising. ]]></key>
+    <key alias="itemisntsuitable"><![CDATA[Unfortunately this item isn't suitable for optimising.]]></key>
+    <key alias="image"><![CDATA[Image:]]></key>
+    <key alias="valid"><![CDATA[This image can be optimised. <br><br><span class="blue">Please note, this might take sometime depending on original image size.</span>]]>
+    </key>
+  </area>
+</language>

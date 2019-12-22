@@ -1,0 +1,37 @@
+﻿<div ng-controller="punkOptimise.Optimise.Controller" ng-init="init()" id="optimise">
+
+    <div ng-if="isImage">
+
+        <div class="umb-dialog-body form-horizontal" ng-if="!loading">
+            <div class="umb-pane" ng-if="isValid">                
+                <p><localize key="optimise_valid">The image can be optimised, please click optimise.</localize></p>
+            </div>
+
+            <div class="umb-pane" ng-if="!isValid">
+                <p class="red"><localize key="optimise_notvalid">Unfortunately this image isn't suitable for optimising. </localize></p>
+            </div>
+        </div>
+
+        <div style="height: 25px;clear:both;" ng-if="loading">
+            <umb-load-indicator></umb-load-indicator>
+        </div>
+
+        <div class="umb-dialog-footer btn-toolbar umb-btn-toolbar">
+            <a class="btn btn-link ng-scope" ng-click="nav.hideDialog()" ng-if="!busy">
+                <localize key="optimise_cancel">Cancel</localize>
+            </a>
+
+            <button class="btn btn-primary" ng-click="save()" ng-disabled="!isValid || busy || loading">
+                <localize key="optimise_save">Optimise</localize>
+            </button>
+        </div>
+    </div>
+
+    <div ng-if="!isImage">
+        <div class="umb-dialog-body form-horizontal">
+            <div class="umb-pane">
+                <p class="red"><localize key="optimise_itemisntsuitable">Unfortunately this item isn't suitable for optimise.</localize></p>
+            </div>
+        </div>
+    </div>
+</div>
