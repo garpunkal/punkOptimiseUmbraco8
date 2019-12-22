@@ -12,7 +12,7 @@
     <RepositoryType>GIT</RepositoryType>
     <PackageTags></PackageTags>
     <PackageDescription>A plugin for Umbraco 8 which allows you to optimise media using TinyPNG or ImageProcessor.</PackageDescription>
-    <Version>1.0.0.1</Version>
+    <Version>1.0.1.0</Version>
     <RunPostBuildEvent>Always</RunPostBuildEvent>
   </PropertyGroup>
 
@@ -24,14 +24,6 @@
       <copyToOutput>true</copyToOutput>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Images\garpunkal.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Images\garpunkal.jpg" />
   </ItemGroup>
 
   <ItemGroup>
