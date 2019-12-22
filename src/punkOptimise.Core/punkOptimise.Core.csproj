@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Company>garpunkal</Company>
+    <Description>punkOptimise.Core</Description>
+    <PackageProjectUrl>https://github.com/garpunkal/</PackageProjectUrl>
+    <PackageIconUrl></PackageIconUrl>
+    <RepositoryUrl>https://github.com/garpunkal/punkOptimise</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageTags></PackageTags>
+    <Version>1.0.0.0</Version>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="App_Plugins/punkOptimise/**/*.*" copyToOutput="true">
+      <IncludeInPackage>true</IncludeInPackage>
+      <CopyToOutput>true</CopyToOutput>
+      <BuildAction>Content</BuildAction>
+      <copyToOutput>true</copyToOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="UmbracoCms.Core" Version="8.4.0" />
+    <PackageReference Include="UmbracoCms.Web" Version="8.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="if $(ConfigurationName) == Debug xcopy &quot;$(ProjectDir)app_plugins&quot; &quot;$(SolutionDir)punkOptimise.Web\app_plugins&quot; /D /y /s /r" />
+  </Target>
+
+
+</Project>
+
+
