@@ -7,7 +7,7 @@
     <Authors>Gareth Wright</Authors>
     <Description>A plugin for Umbraco 8 which allows you to optimise media using TinyPNG or ImageProcessor.</Description>
     <PackageProjectUrl>https://github.com/garpunkal/punkOptimise</PackageProjectUrl>
-    <PackageIcon>~/images/garpunkal.jpg</PackageIcon>
+    <PackageIcon>garpunkal.jpg</PackageIcon>
     <RepositoryUrl>https://github.com/garpunkal/punkOptimise</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
     <PackageTags></PackageTags>
