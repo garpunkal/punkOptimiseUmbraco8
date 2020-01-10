@@ -12,7 +12,7 @@
     <key alias="itemisntsuitable"><![CDATA[Unfortunately this item isn't suitable for optimising.]]></key>
     <key alias="image"><![CDATA[Image:]]></key>
     <key alias="valid">
-      <![CDATA[This image can be optimised. <br><br><span class="blue">Please note, this might take sometime depending on original image size.</span>]]>
+      <![CDATA[This image can be optimised. <br><br><span class="blue">Please note, this might take some time depending on original image size.</span>]]>
     </key>
   </area>
 </language>
